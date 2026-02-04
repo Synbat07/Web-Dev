@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Georgia, serif;
+}
+
+.page {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* columns */
+.left, .right {
+  width: 50%;
+}
+
+/* left */
+.left {
+  padding: 70px 80px;
+}
+
+.instagram-icon {
+  width: 56px;
+  height: 56px;
+  display: block;
+  margin-bottom: 24px;
+  object-fit: contain;
+}
+
+.headline {
+  font-size: 39px;
+  line-height: 1.4;
+  color: #111;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gradient {
+  background: linear-gradient(to right, #ff7a00, #ff00a8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.image-box {
+  max-width: 700px;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* divider */
+.divider {
+  width: 1px;
+  background: #e5e7eb;
+  height: 100vh;
+  flex: 0 0 1px;
+}
+
+/* right */
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 150px;
+  font-family: Arial, sans-serif;
+}
+
+.login-panel {
+  width: 460px;
+  text-align: center;
+}
+
+.title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: #111;
+}
+
+.field {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #d7dde7;
+  border-radius: 14px;
+  font-size: 16px;
+  margin-bottom: 16px;
+  outline: none;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 999px;
+  background: #9cc5ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.forgot {
+  display: inline-block;
+  margin: 18px 0 26px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111;
+  text-decoration: none;
+}
+
+.fb-btn {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d7dde7;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.fb-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #1877f2;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.create-btn {
+  display: block;
+  margin-top: 16px;
+  padding: 14px;
+  border-radius: 999px;
+  border: 2px solid #2f7cff;
+  color: #2f7cff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.meta {
+  margin-top: 28px;
+  color: black;
+  font-weight: 700;
+}
