@@ -1,12 +1,10 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
-@Component ( {
-    selector: 'app-root',
-    templete: 'Hello Universe',
-
-    styles: `
-  :host {
-    color: #a144eb;
-  }`,
+@Component({
+  selector: 'app-root',
+  styleUrls: ['app.css'],
+  template: `<div [contentEditable]="isEditable"></div>`,
 })
-export class App{}
+export class App {
+  isEditable = true;
+}
