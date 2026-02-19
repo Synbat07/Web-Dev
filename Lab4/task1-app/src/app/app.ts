@@ -1,44 +1,45 @@
 import { Component } from '@angular/core';
-import { ReactiveFormsModule, FormGroup, FormControl } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [ReactiveFormsModule],
   template: `
-    <h2>Profile Form</h2>
+    <form [formGroup]="profileForm">
+      
+      <input 
+        type="text" 
+        formControlName="name" 
+        name="name" 
+        placeholder="Name" 
+      />
 
-    <form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
-      <label>
-        Name
-        <input type="text" formControlName="name" />
-      </label>
+      <input 
+        type="email" 
+        formControlName="email" 
+        name="email" 
+        placeholder="Email" 
+      />
 
-      <label>
-        Email
-        <input type="email" formControlName="email" />
-      </label>
+      <button 
+        type="submit" 
+        [disabled]="!profileForm.valid">
+        Submit
+      </button>
 
-      <button type="submit">Submit</button>
     </form>
-
-    <p>Name: {{ profileForm.value.name }}</p>
-    <p>Email: {{ profileForm.value.email }}</p>
-  `
+  `,
 })
 export class App {
 
   profileForm = new FormGroup({
-    name: new FormControl(''),
-    email: new FormControl(''),
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', [
+      Validators.required,
+      Validators.email
+    ]),
   });
-
-  handleSubmit() {
-    alert(
-      this.profileForm.value.name +
-      ' | ' +
-      this.profileForm.value.email
-    );
-  }
 
 }
