@@ -7,7 +7,7 @@ import { FormsModule } from '@angular/forms';
   imports: [FormsModule],
   template: `
     <p>Username: {{ username }}</p>
-    <p>{{ username }}'s favorite framework: {{ favoriteFramework }}</p>
+    <p>Framework: {{ favoriteFramework }}</p>
 
     <label for="framework">
       Favorite Framework:
@@ -17,9 +17,15 @@ import { FormsModule } from '@angular/forms';
         [(ngModel)]="favoriteFramework" 
       />
     </label>
+
+    <button (click)="showFramework()">Show Framework</button>
   `
 })
 export class User {
   username = 'youngTech';
   favoriteFramework = '';
+
+  showFramework() {
+    alert(this.favoriteFramework);
+  }
 }
