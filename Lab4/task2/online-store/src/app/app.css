@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+.header {
+  background: rgb(255, 47, 47);
+  color: white;
+  padding: 20px;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+}

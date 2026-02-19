@@ -1,0 +1,43 @@
+<div class="grid">
+  @for (p of products; track p.id) {
+    <div class="card">
+
+      <!--главное фото-->
+      <img class="main-img" [src]="getMainImage(p)" [alt]="p.name" />
+
+      <!--мини-фото-->
+      <div class="thumbs">
+        @for (img of p.images; track img) {
+          <img class="thumb"
+               [src]="img"
+               (click)="selectImage(p, p.images.indexOf(img))"
+               alt="" />
+        }
+      </div>
+
+      <h3>{{ p.name }}</h3>
+      <p class="desc">{{ p.description }}</p>
+
+      <div class="row">
+        <span class="price">{{ p.price }} ₸</span>
+        <span class="rating">⭐ {{ p.rating }}</span>
+      </div>
+
+      <div class="actions">
+        <a class="link" [href]="p.link" target="_blank" rel="noopener">
+          <strong>Open on Kaspi</strong>
+        </a>
+
+        <a class="link" [href]="whatsappShare(p)" target="_blank" rel="noopener">
+          <strong>Share WhatsApp</strong>
+        </a>
+
+        <a class="link" [href]="telegramShare(p)" target="_blank" rel="noopener">
+          <strong>Share Telegram</strong>
+        </a>
+      </div>
+
+    </div>
+  }
+</div>
+
