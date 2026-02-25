@@ -1,12 +1,27 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, computed, signal } from '@angular/core';
+import { CATEGORIES, PRODUCTS } from './data/products';
+import { Product } from './models/product.model';
+import { ProductListComponent } from './components/product-list/product-list';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [ProductListComponent],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('online-store');
+  categories = CATEGORIES;
+
+  selectedCategoryId = signal<number | null>(null);
+
+  filteredProducts = computed<Product[]>(() => {
+    const id = this.selectedCategoryId();
+    if (id === null) return [];
+    return PRODUCTS.filter(p => p.categoryId === id);
+  });
+
+  selectCategory(id: number) {
+    this.selectedCategoryId.set(id);
+  }
 }

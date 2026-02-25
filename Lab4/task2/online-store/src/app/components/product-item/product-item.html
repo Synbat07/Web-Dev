@@ -1,0 +1,46 @@
+<div class="card">
+  <img class="main-img" [src]="mainImage" [alt]="product().name" />
+
+  <div class="thumbs">
+    @for (img of product().images; track $index) {
+      <img class="thumb"
+           [src]="img"
+           [alt]="product().name"
+           (click)="selectImage($index)" />
+    }
+  </div>
+
+  <h3>{{ product().name }}</h3>
+  <p class="desc">{{ product().description }}</p>
+
+  <div class="row">
+    <span class="price">{{ product().price }} ₸</span>
+    <span class="rating">⭐ {{ product().rating }}</span>
+  </div>
+
+  <div class="row">
+    <span>❤️ {{ product().likes }}</span>
+  </div>
+
+  <div class="actions">
+    <a class="link" [href]="product().link" target="_blank" rel="noopener">
+      <strong>Open on Kaspi</strong>
+    </a>
+
+    <a class="link" [href]="whatsappShare()" target="_blank" rel="noopener">
+      <strong>Share WhatsApp</strong>
+    </a>
+
+    <a class="link" [href]="telegramShare()" target="_blank" rel="noopener">
+      <strong>Share Telegram</strong>
+    </a>
+
+    <button class="link" type="button" (click)="like()">
+      <strong>Like</strong>
+    </button>
+
+    <button class="link danger" type="button" (click)="onDelete()">
+      <strong>Delete</strong>
+    </button>
+  </div>
+</div>

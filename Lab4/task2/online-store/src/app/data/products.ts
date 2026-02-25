@@ -1,5 +1,12 @@
 import { Product } from '../models/product.model';
 
+export const CATEGORIES = [
+  { id: 1, name: 'Hair Care' },
+  { id: 2, name: 'Makeup' },
+  { id: 3, name: 'Skincare' },
+  { id: 4, name: 'Other' },
+];
+
 export const PRODUCTS: Product[] = [
   {
     id: 1,
@@ -11,9 +18,12 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/h3b/he1/86048012468254.jpg?format=gallery-large',
       'https://cdn-irec.r-99.com/sites/default/files/imagecache/copyright1/user-images/2477018/vCkojlzVY4gDXt8douG4g.jpg',
-      'https://tse3.mm.bing.net/th/id/OIP.XwnoqAryZsZ-6iKMqq9uagHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      'https://tse3.mm.bing.net/th/id/OIP.XwnoqAryZsZ-6iKMqq9uagHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
     ],
-    link: 'https://l.kaspi.kz/shop/6mJEjzqkaJ7kDGs'},
+    link: 'https://l.kaspi.kz/shop/6mJEjzqkaJ7kDGs',
+    categoryId: 1,
+    likes: 0,
+  },
   {
     id: 2,
     name: 'KeraSys Repairing 17 Amino Balance шампунь 400 мл',
@@ -24,9 +34,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/p06/p58/35194860.jpg?format=gallery-large',
       'https://resources.cdn-kaspi.kz/img/m/p/p92/p58/35194865.jpg?format=gallery-medium',
-      'https://resources.cdn-kaspi.kz/img/m/p/p3e/p58/35194862.jpg?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/p3e/p58/35194862.jpg?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/Bnk3rrjXsNnV9gY'
+    link: 'https://l.kaspi.kz/shop/Bnk3rrjXsNnV9gY',
+    categoryId: 1,
+    likes: 0,
   },
   {
     id: 3,
@@ -38,9 +50,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/pa6/p66/77936551.png?format=gallery-medium',
       'https://hairhub.com.ua/image/cache/catalog/easyphoto/4696/catalog-easyphoto-tmp-zap-jpg-1-1000x1000.jpg',
-      'https://resources.cdn-kaspi.kz/img/m/p/p89/p66/77936552.png?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/p89/p66/77936552.png?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/9poA2E1Wqez2k6D'
+    link: 'https://l.kaspi.kz/shop/9poA2E1Wqez2k6D',
+    categoryId: 1,
+    likes: 0,
   },
   {
     id: 4,
@@ -52,9 +66,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://contents.kyobobook.co.kr/sih/fit-in/600x0/gift/pdt/1340/S1661242108591.jpg',
       'https://down-id.img.susercontent.com/file/id-11134207-7rbk8-m8ynqzobxqtef0',
-      'https://resources.cdn-kaspi.kz/img/m/p/p65/p76/58677375.jpeg?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/p65/p76/58677375.jpeg?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/5uyCG1jApXdqJ5k'
+    link: 'https://l.kaspi.kz/shop/5uyCG1jApXdqJ5k',
+    categoryId: 3,
+    likes: 0,
   },
   {
     id: 5,
@@ -66,11 +82,12 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/p3c/pb5/21586295.jpg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/p03/pb5/21586297.jpg?format=gallery-medium',
-      'https://resources.cdn-kaspi.kz/img/m/p/pb3/p6a/21586300.jpg?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/pb3/p6a/21586300.jpg?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/3RvCiykY3csRLxu'
+    link: 'https://l.kaspi.kz/shop/3RvCiykY3csRLxu',
+    categoryId: 1,
+    likes: 0,
   },
-
   {
     id: 6,
     name: 'ALL ME Charisma Mascara тушь для ресниц',
@@ -81,9 +98,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/p4c/pf5/102197012.jpg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/p87/pf4/102197019.jpg?format=gallery-medium',
-      'https://resources.cdn-kaspi.kz/img/m/p/p39/pf1/102197028.jpg?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/p39/pf1/102197028.jpg?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/CR5sjkmVEg46Em8'
+    link: 'https://l.kaspi.kz/shop/CR5sjkmVEg46Em8',
+    categoryId: 2,
+    likes: 0,
   },
   {
     id: 7,
@@ -95,9 +114,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/h3e/h5e/86574200455198.jpg?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/hb5/hdb/86574200520734.jpg?format=gallery-medium',
-      'https://tse2.mm.bing.net/th/id/OIP.Unw5G5_JDy2vmQXJOan_8QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3'
+      'https://tse2.mm.bing.net/th/id/OIP.Unw5G5_JDy2vmQXJOan_8QHaHa?rs=1&pid=ImgDetMain&o=7&rm=3',
     ],
-    link: 'https://l.kaspi.kz/shop/Hm9GvxVP6kAiiSU'
+    link: 'https://l.kaspi.kz/shop/Hm9GvxVP6kAiiSU',
+    categoryId: 2,
+    likes: 0,
   },
   {
     id: 8,
@@ -109,9 +130,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/p34/p90/72811509.png?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/p56/p93/55141670.jpg?format=gallery-medium',
-      'https://resources.cdn-kaspi.kz/img/m/p/pd0/p8f/55141681.jpg?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/pd0/p8f/55141681.jpg?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/FwCAq6gmoSMFJ8K'
+    link: 'https://l.kaspi.kz/shop/FwCAq6gmoSMFJ8K',
+    categoryId: 1,
+    likes: 0,
   },
   {
     id: 9,
@@ -123,9 +146,11 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/pc3/pf7/87220251.png?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/h6a/hac/80719768289310.jpg?format=gallery-medium',
-      'https://resources.cdn-kaspi.kz/img/m/p/h59/h30/80719768354846.jpg?format=gallery-medium'
+      'https://resources.cdn-kaspi.kz/img/m/p/h59/h30/80719768354846.jpg?format=gallery-medium',
     ],
-    link: 'https://l.kaspi.kz/shop/HzLJqhfXbJwK9nq'
+    link: 'https://l.kaspi.kz/shop/HzLJqhfXbJwK9nq',
+    categoryId: 2,
+    likes: 0,
   },
   {
     id: 10,
@@ -137,8 +162,171 @@ export const PRODUCTS: Product[] = [
     images: [
       'https://resources.cdn-kaspi.kz/img/m/p/p50/pda/7392121.png?format=gallery-medium',
       'https://resources.cdn-kaspi.kz/img/m/p/p88/pda/7392123.png?format=gallery-medium',
-      'https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/228147/HHtqsgzu4zkAlg7xhMZAUg.jpg'
+      'https://irecommend.ru/sites/default/files/imagecache/copyright1/user-images/228147/HHtqsgzu4zkAlg7xhMZAUg.jpg',
     ],
-    link: 'https://l.kaspi.kz/shop/J52rLeg2fKrnxnW'
-  }
+    link: 'https://l.kaspi.kz/shop/J52rLeg2fKrnxnW',
+    categoryId: 3,
+    likes: 0,
+  },
+
+    {
+    id: 11,
+    name: 'Заколка краб 9 шт',
+    description: 'Набор заколок-крабиков для фиксации волос. Подходит для ежедневных причесок и укладки.',
+    price: 875,
+    rating: 4.9,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h5a/h99/80296739766302.jpg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/h5a/h99/80296739766302.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/pe8/p3a/64243749.png?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/p54/p3d/64243750.png?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/9RWR3fjAe7CChWq',
+    categoryId: 4,
+    likes: 0,
+  },
+  {
+    id: 12,
+    name: 'Маска для лица AXIS-Y глиняная Mugwort Pore Clarifying Wash Off Pack 100 мл',
+    description: 'Глиняная смываемая маска с полынью для очищения пор и уменьшения жирного блеска. Помогает освежить кожу.',
+    price: 5988,
+    rating: 5,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p2f/pec/38000044.jpg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/p2f/pec/38000044.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/p68/pec/38000046.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/pa0/pec/38000048.jpg?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/A62fQp41C72CSdQ',
+    categoryId: 3,
+    likes: 0,
+  },
+  {
+    id: 13,
+    name: 'Jeans набор кистей для макияжа 308589 15 шт',
+    description: 'Набор кистей для макияжа (15 штук) для нанесения тональных средств, теней, пудры и румян.',
+    price: 1399,
+    rating: 4.6,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/hd7/haf/80937102475294.jpg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/hd7/haf/80937102475294.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/h93/hbb/80937101983774.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/ha5/h3e/80937102049310.jpg?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/4ixWBSQXyW33Nux',
+    categoryId: 4,
+    likes: 0,
+  },
+  {
+    id: 14,
+    name: 'Sen Sulu глиттер прессованные Sparkle mood 02 Golden gleam',
+    description: 'Прессованный глиттер для макияжа. Добавляет сияние и акцент, можно наносить на веки или как хайлайт.',
+    price: 3494,
+    rating: 4.9,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p11/p9e/47120125.jpeg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/p11/p9e/47120125.jpeg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/p3e/p97/47120127.jpeg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/pd4/p93/47120128.jpeg?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/DVdc6TXkcTUxFct',
+    categoryId: 2,
+    likes: 0,
+  },
+  {
+    id: 15,
+    name: 'LUXVISAGE Active complex SPF10 СС крем 10 Fair 35 мл',
+    description: 'СС-крем с SPF10 для выравнивания тона кожи и лёгкого покрытия. Подходит для ежедневного макияжа.',
+    price: 1974,
+    rating: 4.8,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h72/h79/86668728434718.jpg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/h72/h79/86668728434718.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/h66/h5a/86668728500254.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/hce/hc5/86668728565790.jpg?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/GVm2yxSiBtWKHuV',
+    categoryId: 2,
+    likes: 0,
+  },
+  {
+    id: 16,
+    name: 'Von-U Щетка-массажер для мытья волос и головы MAXI-HAIR Shampoo Brush',
+    description: 'Щетка-массажер для кожи головы. Помогает распределять шампунь и мягко массировать во время мытья.',
+    price: 344,
+    rating: 4.9,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h1d/h7a/85105988010014.png?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/h1d/h7a/85105988010014.png?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/h18/hb7/85105988403230.png?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/h84/hf8/85105988599838.png?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/2RYaS1XfP6Wt2Tc',
+    categoryId: 4,
+    likes: 0,
+  },
+  {
+    id: 17,
+    name: 'Bioderma бальзам Atoderm Intensive для лица 45 мл',
+    description: 'Питательный бальзам для сухой и чувствительной кожи лица. Помогает уменьшить ощущение стянутости и дискомфорта.',
+    price: 3100,
+    rating: 5,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/pc2/p9b/81512035.png?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/pc2/p9b/81512035.png?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/p15/p22/25605801.png?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/p86/p22/25605805.png?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/3Ju4MtUJ6U3exJN',
+    categoryId: 3,
+    likes: 0,
+  },
+  {
+    id: 18,
+    name: 'Пуховка велюр 2 шт',
+    description: 'Велюровые пуховки для нанесения пудры и фиксации макияжа. В наборе 2 штуки.',
+    price: 90,
+    rating: 4.9,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p42/pc6/11565059.jpg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/p42/pc6/11565059.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/pd6/pc3/11565060.png?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/p65/pc3/11565064.png?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/7FuYxqCfV6AE1Ja',
+    categoryId: 4,
+    likes: 0,
+  },
+  {
+    id: 19,
+    name: 'MoFa MeiRen The Rose салфетки матирующие бумажные 100 шт',
+    description: 'Матирующие салфетки для удаления жирного блеска без смывания макияжа. Удобны для повседневного использования.',
+    price: 224,
+    rating: 4.9,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h33/h8e/81136482844702.jpg?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/h33/h8e/81136482844702.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/ha3/h9b/81136482910238.jpg?format=gallery-medium',
+      'https://resources.cdn-kaspi.kz/img/m/p/h27/h44/81136482975774.jpg?format=gallery-medium',
+    ],
+    link: 'https://l.kaspi.kz/shop/C4fm5UY9tzNCksu',
+    categoryId: 4,
+    likes: 0,
+  },
+  {
+    id: 20,
+    name: 'MEDI-PEEL эмульсия Aqua Essence Peptide 9 для лица 250 мл',
+    description: 'Увлажняющая эмульсия для лица с пептидами. Подходит для ежедневного ухода и поддержания упругости кожи.',
+    price: 4477,
+    rating: 4.9,
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p0f/p06/61063912.png?format=gallery-medium',
+    images: [
+      'https://resources.cdn-kaspi.kz/img/m/p/p47/p06/61063914.png?format=gallery-medium',
+      'https://bb-mania.kz/userfiles/shop/large/2/17462_aqua-essence-toner-peptide-9-medi-peel.jpg',
+      'https://cdn-irec.r-99.com/sites/default/files/imagecache/copyright1/user-images/2785183/JnqVeM8cnfRlRGkmiHqw.jpg',
+    ],
+    link: 'https://l.kaspi.kz/shop/ABL1JiDvwhz4xgK',
+    categoryId: 3,
+    likes: 0,
+  },
 ];
